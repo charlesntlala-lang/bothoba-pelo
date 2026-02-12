@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Phone, Mail, MapPin, Heart, Shield, Users, Sprout, BookOpen, ArrowRight } from "lucide-react"
+import { Phone, Mail, MapPin, Heart, Shield, Users, Sprout, BookOpen, ArrowRight, Images } from "lucide-react"
 
 export default function BothobaPeloFoundation() {
   return (
@@ -565,6 +565,15 @@ export default function BothobaPeloFoundation() {
           </div>
         </div>
       </footer>
+
+      {/* Mobile Gallery CTA - Fixed Floating Button */}
+      <a
+        href="/gallery"
+        className="md:hidden fixed bottom-6 right-6 z-50 bg-gradient-to-r from-red-600 to-pink-600 text-white px-6 py-4 rounded-full shadow-2xl flex items-center gap-3 hover:from-red-700 hover:to-pink-700 transition-all transform hover:scale-105 animate-bounce"
+      >
+        <Images className="h-6 w-6" />
+        <span className="font-semibold text-lg">View Gallery</span>
+      </a>
     </div>
   )
 }
